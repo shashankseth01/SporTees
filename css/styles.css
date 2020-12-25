@@ -1,176 +1,177 @@
-body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-.header {
-    overflow: hidden;
-    background-color: #f1f1f1;
-    padding: 20px 10px;
-}
-
-.header a {
-    float: left;
-    color: black;
-    text-align: center;
-    padding: 12px;
-    text-decoration: none;
-    font-size: 18px;
-    line-height: 25px;
-    border-radius: 4px;
-}
-
-.header a.logo {
-    font-size: 25px;
-    font-weight: bold;
-}
-
-.header-right a:hover {
-    background-color: #ddd;
-    color: black;
-}
-
-.header a.active {
-    background-color: dodgerblue;
-    color: white;
-}
-
-.header-right {
-    float: right;
-}
-
-.header .search-bar {
-    float: right;
-}
-
-.header input[type=text] {
-    padding: 6px;
-    margin-top: 8px;
-    font-size: 17px;
-    border: none;
-}
-
-.header .search-bar button {
-    float: right;
-    padding: 6px 10px;
-    margin-top: 8px;
-    margin-right: 16px;
-    background: #ddd;
-    font-size: 17px;
-    border: none;
-    cursor: pointer;
-}
-
-.navbar {
-    overflow: hidden;
-    background-color: #333;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.navbar a {
-    float: left;
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-.dropdown {
-    float: left;
-    overflow: hidden;
-}
-
-.dropdown .dropbtn {
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font: inherit;
-    margin: 0;
-}
-
-.navbar a:hover,
-.dropdown:hover .dropbtn {
-    background-color: grey;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    width: 100%;
-    left: 0;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-.dropdown-content .header {
-    background: rgb(110, 109, 109);
-    padding: 16px;
-    color: white;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-
-/* Create three equal columns that floats next to each other */
-
-.column {
-    float: left;
-    width: 33.33%;
-    padding: 10px;
-    background-color: #ccc;
-    height: 250px;
-}
-
-.column a {
-    float: none;
-    color: black;
-    padding: 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-.column a:hover {
-    background-color: #ddd;
-}
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-@media screen and (max-width: 600px) {
-    .header-right,
-    .header .search-bar {
-        float: none;
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
     }
-    .header a,
-    .header input[type=text],
+    
+    * {
+        box-sizing: border-box;
+    }
+    
+    .header {
+        overflow: hidden;
+        background-color: #f1f1f1;
+        padding: 10px 10px;
+    }
+    
+    .header a {
+        float: left;
+        color: black;
+        text-align: center;
+        padding: 12px;
+        text-decoration: none;
+        font-size: 18px;
+        line-height: 25px;
+        border-radius: 4px;
+    }
+    
+    .header a.logo {
+        font-size: 30px;
+        font-weight: bold;
+    }
+    
+    .header-right a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+    
+    .header-right {
+        float: right;
+    }
+    
+    .header-right i {
+        font-size: larger;
+        margin: auto 7px auto 7px;
+    }
+    
+    .header .search-bar {
+        position: relative;
+        margin: auto;
+        width: 70%;
+    }
+    
+    .header .search-bar input[type=text] {
+        position: relative;
+        padding: 6px;
+        width: 55.55%;
+        margin-left: 22%;
+        margin-top: 8px;
+        font-size: 17px;
+        border: none;
+    }
+    
     .header .search-bar button {
+        position: relative;
+        padding: 6px 10px;
+        margin-top: 8px;
+        background: orange;
+        font-size: 17px;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .navbar {
+        overflow: hidden;
+        background-color: #333;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .navbar a {
+        float: left;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    
+    .dropdown {
+        float: left;
+        overflow: hidden;
+    }
+    
+    .dropdown .dropbtn {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 10px 12px;
+        background-color: inherit;
+        font: inherit;
+        margin: 0;
+    }
+    
+    .navbar a:hover,
+    .dropdown:hover .dropbtn {
+        background-color: grey;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        width: 100%;
+        left: 0;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+    
+    .dropdown-content .header-dd {
+        background: rgb(110, 109, 109);
+        padding: 4px;
+        color: white;
+    }
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    
+    .column {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+        background-color: #ccc;
+        height: 160px;
+    }
+    
+    .column a {
         float: none;
+        color: black;
+        padding: 4px;
+        text-decoration: none;
         display: block;
         text-align: left;
-        width: 100%;
-        margin: 0;
-        padding: 14px;
     }
-    .header input[type=text] {
-        border: 1px solid #ccc;
+    
+    .column a:hover {
+        background-color: #ddd;
     }
-    .column {
-        width: 100%;
-        height: auto;
+    
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
     }
-}
+    
+    @media screen and (max-width: 600px) {
+        .header-right,
+        .header .search-bar {
+            float: none;
+        }
+        .header a,
+        .header input[type=text],
+        .header .search-bar button {
+            float: none;
+            display: block;
+            text-align: left;
+            width: 100%;
+            margin: 0;
+            padding: 14px;
+        }
+        .header input[type=text] {
+            border: 1px solid #ccc;
+        }
+        .column {
+            width: 100%;
+            height: auto;
+        }
+    }
