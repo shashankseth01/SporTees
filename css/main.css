@@ -1,0 +1,33 @@
+    .offers {
+        text-align: center;
+    }
+    
+    .tile-content {
+        margin: 10px 20px 10px 20px;
+    }
+    
+    .offers .tile-content .tiles {
+        float: left;
+        padding: 10px 20px 10px 20px;
+        border: solid black 1px;
+        border-radius: 20px;
+        width: 19%;
+        text-align: center;
+        margin: 5px;
+        box-shadow: 5px 5px rgba(0, 0, 0, 0.514);
+    }
+    
+    #add-to-cart {
+        padding: 5px 10px 5px 10px;
+        background-color: orange;
+        color: black;
+        border-radius: 5px;
+        text-decoration: none;
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+    
+    .tiles i {
+        size: 50px;
+        color: rgba(230, 67, 67, 0.856);
+    }
