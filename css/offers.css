@@ -1,0 +1,55 @@
+    .offers {
+        text-align: center;
+    }
+    
+    .tile-content {
+        margin: 10px 20px 10px 20px;
+    }
+    
+    .offers .tile-content .tiles {
+        float: left;
+        padding: 10px;
+        border: solid black 1px;
+        border-radius: 10px;
+        width: 18%;
+        height: 320px;
+        text-align: center;
+        margin: 12px;
+        box-shadow: 5px 5px rgba(0, 0, 0, 0.514);
+        transition: transform 0.2s;
+    }
+    
+    .tiles:hover {
+        transform: scale(1.025);
+    }
+    
+    #add-to-cart {
+        padding: 5px 10px 5px 10px;
+        background-color: orange;
+        color: black;
+        border-radius: 5px;
+        text-decoration: none;
+        display: inline-block;
+        margin-top: 10px;
+        transition: transform 0.2s;
+    }
+    
+    #add-to-wishlist {
+        float: none;
+        padding: 5px 10px 5px 10px;
+        background-color: rgb(243, 99, 99);
+        color: black;
+        border-radius: 5px;
+        text-decoration: none;
+        display: inline-block;
+        margin-top: 10px;
+        transition: transform 0.2s;
+    }
+    
+    #add-to-cart:hover {
+        transform: scaleX(1.2);
+    }
+    
+    #add-to-wishlist:hover {
+        transform: scaleX(1.2);
+    }
