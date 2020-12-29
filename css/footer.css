@@ -1,6 +1,7 @@
 footer {
+    height: 400px;
     text-align: center;
-    padding: 3px;
-    background-color: DarkSalmon;
-    color: white;
+    padding: 20px 40px 20px 40px;
+    background-color: #635f5fd2;
+    color: black;
 }
