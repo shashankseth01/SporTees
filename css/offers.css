@@ -4,21 +4,21 @@
     
     .tile-content {
         display: block;
+        width: fit-content;
+        margin: auto;
         height: 350px;
         border: black 5px;
     }
     
     .offers .tile-content .tiles {
         float: left;
-        padding: 10px;
+        padding: 3px;
         border: solid black 1px;
-        border-radius: 10px;
-        width: 18%;
         height: 320px;
         text-align: center;
-        margin: 12px;
-        box-shadow: 5px 5px rgba(0, 0, 0, 0.514);
+        margin: 10px 30px 10px 30px;
         transition: transform 0.2s;
+        box-shadow: 1px 1px 1px 1px rgb(150, 147, 147);
     }
     
     .tiles:hover {
@@ -26,8 +26,8 @@
     }
     
     #add-to-cart {
-        padding: 5px 10px 5px 10px;
-        background-color: orange;
+        padding: 5px 40px 5px 40px;
+        background-color: rgba(255, 166, 0, 0.541);
         color: black;
         border-radius: 5px;
         text-decoration: none;
@@ -38,8 +38,8 @@
     
     #add-to-wishlist {
         float: none;
-        padding: 5px 10px 5px 10px;
-        background-color: rgb(243, 99, 99);
+        padding: 5px 40px 5px 40px;
+        background-color: rgba(243, 99, 99, 0.411);
         color: black;
         border-radius: 5px;
         text-decoration: none;
@@ -49,9 +49,19 @@
     }
     
     #add-to-cart:hover {
-        transform: scaleX(1.2);
+        transform: scaleX(1.025);
     }
     
     #add-to-wishlist:hover {
-        transform: scaleX(1.2);
+        transform: scaleX(1.025);
+    }
+    
+    .tiles h3 {
+        padding: 2px;
+        margin: 0;
+    }
+    
+    .tiles p {
+        padding: 2px;
+        margin: 0;
     }
