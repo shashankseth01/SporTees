@@ -3,7 +3,9 @@
     }
     
     .tile-content {
-        margin: 10px 20px 10px 20px;
+        display: block;
+        height: 350px;
+        border: black 5px;
     }
     
     .offers .tile-content .tiles {
