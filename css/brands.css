@@ -1,7 +1,7 @@
 .brands {
     background-color: #f1f1f1;
     width: 90%;
-    height: 500px;
+    height: fit-content;
     display: block;
     margin: auto;
     text-align: center;

@@ -1,12 +1,14 @@
     .offers {
         text-align: center;
+        display: block;
+        height: fit-content;
     }
     
     .tile-content {
         display: block;
         width: fit-content;
         margin: auto;
-        height: 350px;
+        height: 380px;
         border: black 5px;
     }
     
