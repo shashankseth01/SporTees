@@ -6,9 +6,6 @@
     <title>SporTees</title>
     <meta name="description" content="My Page Description">
     <link rel="stylesheet" href="css/header-style.css">
-    <link rel="stylesheet" href="css/offers.css">
-    <link rel="stylesheet" href="css/brands.css">
-    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/division.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -22,7 +19,36 @@
         <div class="header-right">
             <a href="#cart "><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
             <a href="#wishlist " style="color: rgb(117, 47, 47);"><i class="fa fa-bookmark" aria-hidden="true"></i></a>
-            <a href="#profile " style="color: blue;"><i class="fa fa-user" aria-hidden="true"></i></a>
+            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><i class="fa fa-user" aria-hidden="true"></i></button>
+
+            <div id="id01" class="modal">
+
+                <form class="modal-content animate" action="/action_page.php" method="post">
+                    <div class="imgcontainer">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                        <img src="img_avatar2.png" alt="Avatar" class="avatar">
+                    </div>
+
+                    <div class="container">
+                        <label for="uname"><b>Username</b></label>
+                        <input type="text" placeholder="Enter Username" name="uname" required>
+
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+
+                        <button type="submit">Login</button>
+                        <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+                    </div>
+
+                    <div class="container" style="background-color:#f1f1f1">
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                        <span class="psw">Forgot <a href="#">password?</a></span>
+                    </div>
+                </form>
+            </div>
+
         </div>
         <div class="search-bar">
             <form action="/action_page.php">
