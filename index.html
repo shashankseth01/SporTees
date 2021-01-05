@@ -6,6 +6,7 @@
     <title>SporTees</title>
     <meta name="description" content="My Page Description">
     <link rel="stylesheet" href="css/header-style.css">
+    <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="css/division.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -19,15 +20,12 @@
         <div class="header-right">
             <a href="#cart "><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
             <a href="#wishlist " style="color: rgb(117, 47, 47);"><i class="fa fa-bookmark" aria-hidden="true"></i></a>
-            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><i class="fa fa-user" aria-hidden="true"></i></button>
+            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" id="profile"><i class="fa fa-user" aria-hidden="true"></i></button>
 
             <div id="id01" class="modal">
 
                 <form class="modal-content animate" action="/action_page.php" method="post">
-                    <div class="imgcontainer">
-                        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-                        <img src="img_avatar2.png" alt="Avatar" class="avatar">
-                    </div>
+
 
                     <div class="container">
                         <label for="uname"><b>Username</b></label>
