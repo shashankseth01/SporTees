@@ -1,7 +1,6 @@
 .brands {
     background-color: #f1f1f1;
     width: 90%;
-    height: fit-content;
     display: block;
     margin: auto;
     text-align: center;
@@ -9,6 +8,7 @@
 
 .brands h1 {
     text-align: center;
+    size: large;
 }
 
 .brands img {

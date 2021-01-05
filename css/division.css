@@ -1,0 +1,32 @@
+    .new-arrivals {
+        background-color: #f1f1f1;
+        margin: auto;
+        background-image: url('../images/pexels-karl-solano-2780762.jpg');
+        animation: slider 40s infinite normal;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    @keyframes slider {
+        0% {
+            background-image: url('../images/pexels-karl-solano-2780762.jpg');
+        }
+        20% {
+            background-image: url('../images/pexels-nathan-cowley-2413552.jpg');
+        }
+        40% {
+            background-image: url('../images/pexels-andrea-piacquadio-3776152.jpg');
+        }
+        60% {
+            background-image: url('../images/pexels-rfstudio-3621121.jpg');
+        }
+        80% {
+            background-image: url('../images/pexels-andrea-piacquadio-3775599.jpg');
+        }
+    }
+    
+    .division {
+        width: 100%;
+        height: auto;
+    }

@@ -1,19 +1,10 @@
     .offers {
         text-align: center;
         display: block;
-        height: fit-content;
+        height: auto;
     }
     
-    .tile-content {
-        display: block;
-        width: fit-content;
-        margin: auto;
-        height: 380px;
-        border: black 5px;
-    }
-    
-    .offers .tile-content .tiles {
-        float: left;
+    .offers .tiles {
         padding: 3px;
         border: solid black 1px;
         height: 320px;
@@ -21,6 +12,7 @@
         margin: 10px 30px 10px 30px;
         transition: transform 0.2s;
         box-shadow: 1px 1px 1px 1px rgb(150, 147, 147);
+        display: inline-block;
     }
     
     .tiles:hover {
